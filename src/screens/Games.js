@@ -7,22 +7,21 @@ import * as Api from '../lib/Api'
 import { open_tab } from '../utils';
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper";
 
 import "swiper/css";
-//import "swiper/css/free-mode";
-import "swiper/css/pagination";
+import 'swiper/css/virtual';
 
 
 export default class Games extends Component {
   state = {
     loading: true,
+    index: 0,
     games: []
   }
 
   componentDidMount() {
     Api.games().then(data => {
-      this.setState({games: [...data], loading: false})
+      this.setState({ games: data.sort(sortGames), loading: false})
     }).catch(e => {
       console.log(e)
       this.setState({loading: false})
@@ -30,28 +29,37 @@ export default class Games extends Component {
   }
 
   render() {
+    const { index, games } = this.state
+
+    if (games.length === 0) {
+      return
+    }
+
+    const actual = games[index]
+
     return (
       <div>
-        <div style={bannerStyle}>
-          <div>
-          </div>
-        </div>
-        <div>
-          {this.state.loading && <Loading />} 
+        <div className='c-main nes-text'>
+          <h2>{actual.title}</h2>
           <Swiper
-            slidesPerView={3}
-            spaceBetween={30}
-            pagination={{
-              clickable: true,
-            }}
-            modules={[Pagination]}
-            className="mySwiper"
+            slidesPerView={this.props.width > 700 ? 3 : 1}
+            spaceBetween={8}
+            centeredSlides={true}
+            onSlideChange={(e) => this.setState({ index: e.activeIndex })}
           >
-            {this.state.games.sort(sortGames).map((game, i) => (
-              <SwiperSlide><Cartridge key={i} {...game} /></SwiperSlide>
+            {games.map((game) => (
+              <SwiperSlide key={game.uuid}><img src={game.thumbnail} className="c-img c-game-thumbnail" /></SwiperSlide>
             ))
             }
           </Swiper>
+          <small>{actual.descripcion}</small>
+          <p>
+            <button type="button" className="nes-btn is-success">Jugar</button>
+          </p>
+        </div>
+        <div className='c-container'>
+          <h1>C28</h1>
+          <p>Desarrollo de videojuegos</p>
         </div>
       </div>
     )
@@ -59,19 +67,5 @@ export default class Games extends Component {
 }
 
 function sortGames(a, b) {
-  return moment(a.fecha_publicacion).isBefore(b.fecha_publicacion) ? 1 : -1
-}
-
-const bannerStyle = {
-  marginBottom: 64,
-
-  //backgroundImage: 'url(img/banner.png)',
-  //backgroundAttachment: 'fixed',
-  //backgroundRepeat: 'no-repeat',
-  //backgroundSize: 'length',
-  backgroundColor: '#5599ff',
-  textAlign: 'center',
-  minHeight: 320,
-  width: '100%',
-  color: 'white'
+  return a.index < b.index ? 1 : -1
 }

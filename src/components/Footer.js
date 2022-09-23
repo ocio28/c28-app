@@ -9,13 +9,15 @@ export default class Footer extends Component {
     }
 
     return (
-      <footer style={{ padding: 16, marginTop: 64 }}>
+      <footer className='c-footer'>
         <div>
           <strong>C28 - {new Date().getFullYear()}</strong>
-          <button onClick={() => mail_to("develop@c28.cl")}>
-            mail
-          </button>
-          <div id="tippin-button" data-dest="ocio28"></div>
+          <p>
+            <a href="mailto:develop@c28.cl">develop@c28.cl</a>
+          </p>
+          <div>
+            <div id="tippin-button" data-dest="ocio28"></div>
+          </div>
         </div>
       </footer>
     );

@@ -1,6 +1,6 @@
 [{
     "uuid": "8dbc6112-144a-489a-bf3a-91c24320bdf0",
-    "index": 1,
+    "index": 0,
     "fecha_publicacion": "2016-07-06T11:26:00.0Z",
     "name": "popoki",
     "title": "Popokis Quest",
@@ -19,7 +19,7 @@
     ]
 }, {
     "uuid": "7c00b046-bb1e-419e-be37-d6cd60d3bb94",
-    "index": 3,
+    "index": 1,
     "fecha_publicacion": "2017-05-12T11:26:00.0Z",
     "name": "neonimo",
     "title": "Neonimo",
@@ -82,7 +82,7 @@
     ]
 }, {
     "uuid": "55c17199-cf7c-402c-8342-16531d02354f",
-    "index": 0,
+    "index": 4,
     "fecha_publicacion": "2018-02-27T00:47:00.0Z",
     "name": "saltarina",
     "title": "Saltarina",
@@ -101,7 +101,7 @@
     ]
 }, {
     "uuid": "ec228767-d8d0-4a8a-8145-cf074e3e2cf5",
-    "index": 4,
+    "index": 5,
     "fecha_publicacion": "2019-01-13T01:23:00.0Z",
     "name": "balun",
     "title": "Balun",
@@ -119,8 +119,8 @@
         "web"
     ]
 }, {
-    "uuid": "8dbc6112-144a-489a-bf3a-91c24320bdf0",
-    "index": 5,
+    "uuid": "4c6da26c-da09-4854-adc1-72f884e2c1ad",
+    "index": 6,
     "fecha_publicacion": "2021-03-20T12:42:00.0Z",
     "name": "avioneta",
     "title": "Avioneta",
@@ -140,7 +140,7 @@
 },
 {
     "uuid": "externo-01",
-    "index": 6,
+    "index": 3,
     "fecha_publicacion": "2020-12-24T12:42:00.0Z",
     "name": "basketandball",
     "title": "Basket and Ball",
@@ -155,4 +155,24 @@
         "url": "https://gameskeys.net",
         "descripcion": "En colaboracion con"
     }
+},
+{
+    "uuid": "b526e0c7-fabd-458b-a5bb-5de48057baf3",
+    "index": 7,
+    "fecha_publicacion": "2022-10-12T11:00:00.0Z",
+    "name": "supermando",
+    "title": "Super Mando",
+    "descripcion": "Disponible en steam",
+    "thumbnail": "img/thumbnail/supermando.webp",
+    "html5": "https://play.google.com/store/apps/details?id=cl.c28.godot.avioneta",
+    "url": [],
+    "width": 720,
+    "height": 450,
+    "style": {
+        "color": "white",
+        "backgroundColor": "#43A047"
+    },
+    "tags": [
+        "android"
+    ]
 }]
