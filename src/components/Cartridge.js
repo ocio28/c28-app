@@ -1,52 +1,43 @@
-import React, { Component } from 'react';
-import { Button, Icon, Item, Label } from 'semantic-ui-react';
+import React from 'react';
 
-import { format_fecha, open_tab } from "../../utils";
+import { format_fecha, open_tab } from "../utils";
 
 
 export default ({ html5, title, tags, url, thumbnail, fecha_publicacion, descripcion, externo }) => {
   const play = () => open_tab(html5)
 
   return (
-    <Item>
-      <Item.Image src={thumbnail} />
-      <Item.Content>
-        <Item.Header as='a' onClick={play}>{title}</Item.Header>
-        <Item.Meta>
-          <span className='cinema'>{format_fecha(fecha_publicacion)}</span>
-        </Item.Meta>
-        <Item.Description>
+    <div>
+      <img src={thumbnail} />
+      <div>
+        <h3 as='a' onClick={play}>{title}</h3>
+        <span className='cinema'>{format_fecha(fecha_publicacion)}</span>
+        <div>
           <p style={{width: '50%'}}>{descripcion}</p>
           {url.length > 0 && <div>
             <p>Descargar</p>
-            <Button.Group>
-              {url.map((v, i) => <Descargar key={i} { ...v } />)}
-            </Button.Group>
+            {url.map((v, i) => <Descargar key={i} { ...v } />)}
           </div>}
-        </Item.Description>
-        <Item.Extra>
-          {tags.map(v => <Label key={v}>{v}</Label>)}
-          <Button primary floated='right' onClick={play}>
+        </div>
+        <div>
+          {tags.map(v => <label key={v}>{v}</label>)}
+          <button onClick={play}>
             Jugar
-            <Icon name='right chevron' />
-          </Button>
-        </Item.Extra>
-        {externo && <Item.Extra>
+          </button>
+        </div>
+        {externo && <div>
           {externo.descripcion} <a href={externo.url} target="blank">{externo.url}</a>
-        </Item.Extra>}
-      </Item.Content>
-    </Item>
+        </div>}
+      </div>
+    </div>
   )
 }
 
 const Descargar = ({ icon, type }) => {
-  if (type === 'OR') {
-    return <Button.Or />
-  }
   return (
-    <Button icon>
-      <Icon name={icon} />
-    </Button>
+    <button>
+      {icon}
+    </button>
   )
 }
 /*

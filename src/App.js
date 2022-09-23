@@ -1,17 +1,24 @@
-import React from 'react';
-import './App.css';
-import {HashRouter as Router, Route, Redirect} from 'react-router-dom'
-import Footer from './components/footer/Footer'
+import { HashRouter as Router, Route, Routes } from 'react-router-dom'
+import Footer from './components/Footer'
 import Games from './screens/Games'
 
+import './App.css';
 
+function App() {
+  /*return (
+    <>
+      <Games />
+      <Footer />
+    </>
+  )*/
+  return (
+    <Router>
+      <Routes>
+        <Route path="*" element={<Games />} />
+      </Routes>
+      <Footer />
+    </Router>
+  );
+}
 
-export default () => (
-  <Router>
-    <div>
-      <Route exact strict path="/" component={Games} />
-      <Route exact path="/home" component={Games}/>
-      <Route component={Footer}/>
-    </div>
-  </Router>
-) 
+export default App;

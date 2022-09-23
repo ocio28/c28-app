@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
-import { Button, Container, Header, Icon, Image, Item } from 'semantic-ui-react';
 import moment from "moment";
 
-import Cartridge from '../components/game/Cartridge'
+import Cartridge from '../components/Cartridge'
 import Loading from '../components/Loading'
 import * as Api from '../lib/Api'
 import { open_tab } from '../utils';
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper";
 
-function mail_to(v) {
-  window.location.href = "mailto:" + v
-}
+import "swiper/css";
+//import "swiper/css/free-mode";
+import "swiper/css/pagination";
+
 
 export default class Games extends Component {
   state = {
@@ -31,33 +33,26 @@ export default class Games extends Component {
     return (
       <div>
         <div style={bannerStyle}>
-          <div style={{ padding: 8, display: 'flex', width: '100%', justifyContent: 'space-between'}}>
-            <div id="tippin-button" data-dest="ocio28"></div>
-            <div>
-              <Button icon color="blue" circular onClick={() => open_tab("https://twitter.com/ocio28")}>
-                <Icon name="twitter" />
-              </Button>
-              <Button icon color="red" circular as="a" onClick={() => mail_to("develop@c28.cl")}>
-                <Icon name="mail" />
-            
-              </Button>
-            </div>
-          </div>
           <div>
-            <img src="img/logo_simple.png" />
-            <h3>C28</h3>
-            <h4>Galeria personal de mini juegos</h4>
           </div>
         </div>
-        <Container>
+        <div>
           {this.state.loading && <Loading />} 
-          <Item.Group divided>
+          <Swiper
+            slidesPerView={3}
+            spaceBetween={30}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Pagination]}
+            className="mySwiper"
+          >
             {this.state.games.sort(sortGames).map((game, i) => (
-                <Cartridge key={i} { ...game } />
-              ))
+              <SwiperSlide><Cartridge key={i} {...game} /></SwiperSlide>
+            ))
             }
-          </Item.Group>
-        </Container>
+          </Swiper>
+        </div>
       </div>
     )
   }

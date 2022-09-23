@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import { Button, Container, Icon } from 'semantic-ui-react';
 
 
 export default class Footer extends Component {
-  
   render() {
     const click = (url) => {
       const win = window.open(url, '_blank');
@@ -12,10 +10,19 @@ export default class Footer extends Component {
 
     return (
       <footer style={{ padding: 16, marginTop: 64 }}>
-        <Container textAlign="center">
+        <div>
           <strong>C28 - {new Date().getFullYear()}</strong>
-        </Container>
+          <button onClick={() => mail_to("develop@c28.cl")}>
+            mail
+          </button>
+          <div id="tippin-button" data-dest="ocio28"></div>
+        </div>
       </footer>
     );
   }
+}
+
+
+function mail_to(v) {
+  window.location.href = "mailto:" + v
 }
