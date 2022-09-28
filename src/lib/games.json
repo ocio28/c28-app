@@ -2,18 +2,13 @@
     "uuid": "8dbc6112-144a-489a-bf3a-91c24320bdf0",
     "index": 0,
     "fecha_publicacion": "2016-07-06T11:26:00.0Z",
-    "name": "popoki",
-    "title": "Popokis Quest",
+    "titulo": "Popokis Quest",
     "descripcion": "Juega con popoki y supera los retos de este simple plataformero para android, recolecta las gemas y monedas para desbloquear toda la aventura",
-    "thumbnail": "img/thumbnail/popoki.png",
-    "html5": "https://play.google.com/store/apps/details?id=cl.clororo.games.popoki",
-    "url": [],
-    "width": 720,
-    "height": 450,
-    "style": {
-        "color": "white",
-        "backgroundColor": "#43A047"
-    },
+    "thumbnail": "https://resources.clan28.cl/thumbnail/popoki.png",
+    "url": [{
+        "tipo": "android",
+        "link": "https://play.google.com/store/apps/details?id=cl.clororo.games.popoki"
+    }],
     "tags": [
         "android"
     ]
@@ -21,18 +16,13 @@
     "uuid": "7c00b046-bb1e-419e-be37-d6cd60d3bb94",
     "index": 1,
     "fecha_publicacion": "2017-05-12T11:26:00.0Z",
-    "name": "neonimo",
-    "title": "Neonimo",
+    "titulo": "Neonimo",
     "descripcion": "Escapa de los bichos raros y recolecta todo para avanzar a los distintos niveles, las frutas te dan una que otra habilidad que puedes usar a favor",
-    "thumbnail": "img/thumbnail/neonimo.png",
-    "html5": "http://c28.cl/juegos/7c00b046-bb1e-419e-be37-d6cd60d3bb94",
-    "url": [],
-    "width": 672,
-    "height": 550,
-    "style": {
-        "color": "white",
-        "backgroundColor": "#F44336"
-    },
+    "thumbnail": "https://resources.clan28.cl/thumbnail/neonimo.png",
+    "url": [{
+        "tipo": "web",
+        "link": "http://c28.cl/juegos/7c00b046-bb1e-419e-be37-d6cd60d3bb94"
+    }],
     "tags": [
         "web",
         "gamepad",
@@ -42,38 +32,27 @@
     "uuid": "698cc02a-424a-4b68-8948-f756c4dc9eab",
     "index": 2,
     "fecha_publicacion": "2018-11-02T22:15:00.0Z",
-    "name": "another-invaders",
-    "title": "Another Invaders",
+    "titulo": "Another Invaders",
     "descripcion": "Defiende al sistema solar de la invasion alienigena, derrotalos a todos y usa sus armas en su contra!",
-    "thumbnail": "img/thumbnail/another-invaders.png",
-    "html5": "http://c28.cl/juegos/698cc02a-424a-4b68-8948-f756c4dc9eab",
+    "thumbnail": "https://resources.clan28.cl/thumbnail/another-invaders.png",
     "url": [
         {
-            "label": "Windows",
-            "icon": "windows",
+            "tipo": "web",
+            "link": "http://c28.cl/juegos/698cc02a-424a-4b68-8948-f756c4dc9eab"
+        },
+        {
+            "tipo": "windows",
             "link": "https://github.com/ocio28/another-invaders/releases/download/v0.0.4/another-invaders-win-v0.0.4.zip"
         },
-        { "type": "OR" },
         {
-            "label": "macOS",
-            "icon": "apple",
+            "tipo": "macOS",
             "link": "https://github.com/ocio28/another-invaders/releases/download/v0.0.4/another-invaders-macos-v0.0.4.zip"
         },
         {
-            "type": "OR"
-        },
-        {
-            "label": "Linux",
-            "icon": "linux",
+            "tipo": "linux",
             "link": "https://github.com/ocio28/another-invaders/releases/download/v0.0.4/another-invaders-linux-v0.0.4.zip"
         }
     ],
-    "width": 640,
-    "height": 512,
-    "style": {
-        "color": "white",
-        "backgroundColor": "#212121"
-    },
     "tags": [
         "pc",
         "gamepad",
@@ -84,18 +63,13 @@
     "uuid": "55c17199-cf7c-402c-8342-16531d02354f",
     "index": 4,
     "fecha_publicacion": "2018-02-27T00:47:00.0Z",
-    "name": "saltarina",
-    "title": "Saltarina",
+    "titulo": "Saltarina",
     "descripcion": "Salta con saltarina para recolectar los tesoros que te estan esperando! cuidado con los obstaculos",
-    "thumbnail": "img/thumbnail/saltarina.png",
-    "html5": "http://c28.cl/juegos/55c17199-cf7c-402c-8342-16531d02354f",
-    "url": [],
-    "width": 640,
-    "height": 512,
-    "style": {
-        "color": "white",
-        "backgroundColor": "#1E88E5"
-    },
+    "thumbnail": "https://resources.clan28.cl/thumbnail/saltarina.png",
+    "url": [{
+        "tipo": "web",
+        "link": "http://c28.cl/juegos/55c17199-cf7c-402c-8342-16531d02354f"
+    }],
     "tags": [
         "web"
     ]
@@ -103,18 +77,13 @@
     "uuid": "ec228767-d8d0-4a8a-8145-cf074e3e2cf5",
     "index": 5,
     "fecha_publicacion": "2019-01-13T01:23:00.0Z",
-    "name": "balun",
-    "title": "Balun",
+    "titulo": "Balun",
     "descripcion": "Sube y sube y sube y sube, hasta donde llegara?, cuantas monedas puedes recolectar?, cuidado con inflarte mucho",
-    "thumbnail": "img/thumbnail/balun.png",
-    "html5": "http://c28.cl/juegos/ec228767-d8d0-4a8a-8145-cf074e3e2cf5",
-    "url": [],
-    "width": 512,
-    "height": 768,
-    "style": {
-        "color": "white",
-        "backgroundColor": "#3F51B5"
-    },
+    "thumbnail": "https://resources.clan28.cl/thumbnail/balun.png",
+    "url": [{
+        "tipo": "web",
+        "link": "http://c28.cl/juegos/ec228767-d8d0-4a8a-8145-cf074e3e2cf5"
+    }],
     "tags": [
         "web"
     ]
@@ -122,18 +91,16 @@
     "uuid": "4c6da26c-da09-4854-adc1-72f884e2c1ad",
     "index": 6,
     "fecha_publicacion": "2021-03-20T12:42:00.0Z",
-    "name": "avioneta",
-    "title": "Avioneta",
+    "titulo": "Avioneta",
     "descripcion": "Disponible para android, sobrevive el mayor tiempo que puedas y talvez llegar al final",
-    "thumbnail": "img/thumbnail/avioneta.png",
-    "html5": "https://play.google.com/store/apps/details?id=cl.c28.godot.avioneta",
-    "url": [],
-    "width": 720,
-    "height": 450,
-    "style": {
-        "color": "white",
-        "backgroundColor": "#43A047"
-    },
+    "thumbnail": "https://resources.clan28.cl/thumbnail/avioneta.png",
+    "url": [{
+        "tipo": "android",
+        "link": "https://play.google.com/store/apps/details?id=cl.c28.godot.avioneta"
+    },{
+        "tipo": "ios",
+        "link": "https://apps.apple.com/cl/app/avioneta/id1565739384"
+    }],
     "tags": [
         "android"
     ]
@@ -142,37 +109,32 @@
     "uuid": "externo-01",
     "index": 3,
     "fecha_publicacion": "2020-12-24T12:42:00.0Z",
-    "name": "basketandball",
-    "title": "Basket and Ball",
+    "titulo": "Basket and Ball",
     "descripcion": "Basket and Ball!, lleva los balones hacia las canastas con la ayuda del teclado o tocandolas. Resuelve diferentes tipos de acertijos en la cancha de baloncesto y gana bonificaciones. Estos bonos te ayudarán a salir de las dificultades.",
-    "thumbnail": "img/thumbnail/basketandball.webp",
-    "html5": "https://gameskeys.net/product/basket-and-ball",
-    "url": [],
+    "thumbnail": "https://resources.clan28.cl/thumbnail/basketandball.webp",
+    "url": [{
+        "tipo": "ios",
+        "link": "https://gameskeys.net/product/basket-and-ball"
+    }],
     "tags": [
         "ios"
     ],
-    "externo": {
-        "url": "https://gameskeys.net",
-        "descripcion": "En colaboracion con"
-    }
+    "externo": true
 },
 {
     "uuid": "b526e0c7-fabd-458b-a5bb-5de48057baf3",
     "index": 7,
     "fecha_publicacion": "2022-10-12T11:00:00.0Z",
-    "name": "supermando",
-    "title": "Super Mando",
-    "descripcion": "Disponible en steam",
-    "thumbnail": "img/thumbnail/supermando.webp",
-    "html5": "https://play.google.com/store/apps/details?id=cl.c28.godot.avioneta",
-    "url": [],
-    "width": 720,
-    "height": 450,
-    "style": {
-        "color": "white",
-        "backgroundColor": "#43A047"
-    },
+    "titulo": "Super Mando",
+    "descripcion": "Juego de plataformas en pixel art 2D donde podras correr, saltar, esquivar obstaculos y aplastar a los enemigos, una desafiante aventura retro",
+    "thumbnail": "https://resources.clan28.cl/thumbnail/supermando.webp",
+    "url": [{
+        "tipo": "pc",
+        "link": "https://coloro.itch.io/super-mando"
+    }],
     "tags": [
-        "android"
+        "windows",
+        "macos",
+        "linux"
     ]
 }]

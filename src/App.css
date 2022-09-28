@@ -1,8 +1,12 @@
 .c-container {
   padding-left: 5vw;
   padding-right: 5vw;
-  min-height: 400px;
+  min-height: 350px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .c-img {
@@ -26,7 +30,17 @@
 .c-footer {
   background-color: #132a13;
   color: #ecf39e;
-  text-align: center;
   height: 200px;
   padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.c-button-w {
+  width: 100%;
+  max-width: 500px;
 }

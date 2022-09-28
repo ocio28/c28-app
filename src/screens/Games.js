@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
-import moment from "moment";
 
-import Cartridge from '../components/Cartridge'
-import Loading from '../components/Loading'
 import * as Api from '../lib/Api'
-import { open_tab } from '../utils';
-
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
@@ -40,7 +35,10 @@ export default class Games extends Component {
     return (
       <div>
         <div className='c-main nes-text'>
-          <h2>{actual.title}</h2>
+          <div style={{ marginTop: 16, marginBottom: 32 }}>
+            <h2>{actual.titulo}</h2>
+            {actual.externo ? <small>*colaboracion</small> : null}
+          </div>
           <Swiper
             slidesPerView={this.props.width > 700 ? 3 : 1}
             spaceBetween={8}
@@ -52,19 +50,30 @@ export default class Games extends Component {
             ))
             }
           </Swiper>
-          <small>{actual.descripcion}</small>
-          <p>
-            <button type="button" className="nes-btn is-success">Jugar</button>
-          </p>
+          <div style={{ marginTop: 32 }}>
+            <div style={{ minHeight: 200 }}>
+              <small>{actual.descripcion}</small>
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+              {actual.url.map(value => (
+                <a type="button" className="nes-btn is-success c-button-w" href={value.link} target="_blank">Jugar en {value.tipo}</a>
+              ))}
+            </div>
+          </div>
         </div>
         <div className='c-container'>
           <h1>C28</h1>
           <p>Desarrollo de videojuegos</p>
+          <small>
+            <p>Esta es una galeria personal de videojuegos desarrollados para aprender excepto el juego baskets que es una colaboracion con gameskey.</p>
+            <p>Los juegos que dicen "Jugar web" se pueden jugar en el navegador</p>
+          </small>
         </div>
       </div>
     )
   }
 }
+
 
 function sortGames(a, b) {
   return a.index < b.index ? 1 : -1

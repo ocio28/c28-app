@@ -1,9 +1,0 @@
-.Logo {
-  margin: 5vh 0;
-}
-
-@media (max-width: 720px) {
-  .Logo {
-    display: none;
-  }
-}
