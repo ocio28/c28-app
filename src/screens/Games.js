@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from 'swiper';
 
 import * as Api from '../lib/Api'
-import { Swiper, SwiperSlide } from "swiper/react";
+import packageInfo from '../../package.json'
 
 import "swiper/css";
 import 'swiper/css/virtual';
 import "swiper/css/navigation";
-import { Navigation } from 'swiper';
 
 
 export default class Games extends Component {
@@ -46,7 +47,7 @@ export default class Games extends Component {
             spaceBetween={8}
             centeredSlides={true}
             onSlideChange={(e) => this.setState({ index: e.activeIndex })}
-            navigation={true} 
+            navigation={true}
             modules={[Navigation]}
           >
             {games.map((game) => (
@@ -66,10 +67,10 @@ export default class Games extends Component {
           </div>
         </div>
         <div className='c-container'>
-          <h1>C28</h1>
+          <h1>{packageInfo.displayName}</h1>
           <p>Desarrollo de videojuegos</p>
           <small>
-            <p>Esta es una galeria personal de videojuegos desarrollados para aprender excepto el juego baskets que es una colaboracion con gameskey.</p>
+            <p>Pequeño ejercito de una persona con el objetivo de hacer videojuegos</p>
             <p>Los juegos que dicen "Jugar web" se pueden jugar en el navegador</p>
           </small>
         </div>
