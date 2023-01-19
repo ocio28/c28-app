@@ -33,6 +33,11 @@ function Games({ width }) {
     fetchGames()
   }, [])
 
+  const handleIndex = (e) => {
+    console.log('handleIndex', games.length, e.activeIndex)
+    setIndex(e.activeIndex)
+  }
+
   if (loading) {
     return <p>...</p>
   }
@@ -54,9 +59,8 @@ function Games({ width }) {
           slidesPerView={width > 700 ? 3 : 1}
           spaceBetween={8}
           centeredSlides={true}
-          onSlideChange={(e) => setIndex(e.activeIndex)}
+          onSlideChange={handleIndex}
           navigation={true}
-          modules={[Navigation]}
         >
           {games.map((game) => (
             <SwiperSlide key={game.uuid}><img src={game.thumbnail} className="c-img c-game-thumbnail" /></SwiperSlide>
