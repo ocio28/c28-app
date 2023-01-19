@@ -26,6 +26,13 @@ function success(response) {
 
 import Games from './games.json'
 
-export function games() {
-  return Promise.resolve(Games)
+export function games(lang) {
+  return Promise.resolve(Games.map((g) => resolveLang(g, lang)))
+}
+
+function resolveLang(game, lang) {
+  return {
+    ...game,
+    descripcion: lang === 'es' ? game.descripcion_es : game.descripcion_en
+  }
 }

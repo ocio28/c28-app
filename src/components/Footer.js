@@ -5,12 +5,13 @@ import packageInfo from '../../package.json'
 
 function Footer() {
   const { t, i18n } = useTranslation()
+  const handleLang = () => window.location.reload()
 
   return (
     <footer className='c-footer'>
       <div>
-        <LangButton lang="es">Español</LangButton>
-        <LangButton lang="en">English</LangButton>
+        <LangButton lang="es" onChange={handleLang}>Español</LangButton>
+        <LangButton lang="en" onChange={handleLang}>English</LangButton>
       </div>
       <strong>{packageInfo.displayName} - {new Date().getFullYear()} v{packageInfo.version}</strong>
       <p>
@@ -27,13 +28,14 @@ function Footer() {
   );
 }
 
-const LangButton = ({ lang, children }) => {
+const LangButton = ({ lang, children, onChange }) => {
   const { i18n } = useTranslation()
   const selected = lang === i18n.resolvedLanguage
   const className = `nes-btn ${selected ? 'is-warning' : ''} c-button-small`
 
   const handleLanguage = () => {
     i18n.changeLanguage(lang)
+    onChange && onChange(lang)
   }
 
   return (

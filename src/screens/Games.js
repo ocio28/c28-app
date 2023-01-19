@@ -12,7 +12,7 @@ import { useTranslation } from 'react-i18next';
 
 
 function Games({ width }) {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const [loading, setLoading] = useState(true)
   const [index, setIndex] = useState(0)
   const [games, setGames] = useState([])
@@ -20,7 +20,7 @@ function Games({ width }) {
   const fetchGames = async () => {
     try {
       setLoading(true)
-      const reply = await Api.games()
+      const reply = await Api.games(i18n.resolvedLanguage)
       setGames(reply.sort(sortGames))
     } catch (e) {
       console.error("[fetchGames]", e)
