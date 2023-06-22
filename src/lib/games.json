@@ -5,7 +5,7 @@
     "titulo": "Popokis Quest",
     "descripcion_es": "Juega con popoki y supera los retos de este simple plataformero para android, recolecta las gemas y monedas para desbloquear toda la aventura",
     "descripcion_en": "Play with popoki and overcome the challenges of this simple platformer for android, collect the gems and coins to unlock the whole adventure",
-    "thumbnail": "https://resources.clan28.cl/thumbnail/popoki.png",
+    "thumbnail": "https://resources.paponga.com/thumbnail/popoki.png",
     "url": [{
         "tipo": "android",
         "link": "https://play.google.com/store/apps/details?id=cl.clororo.games.popoki"
@@ -20,10 +20,10 @@
     "titulo": "Neonimo",
     "descripcion_es": "Evita los bichos raros y recolecta todo para avanzar a los distintos niveles, las frutas te dan una que otra habilidad que puedes usar a favor",
     "descripcion_en": "Avoid enemies and collect everything to advance to the different levels, the fruits give you one or another ability that you can use in favor",
-    "thumbnail": "https://resources.clan28.cl/thumbnail/neonimo.png",
+    "thumbnail": "https://resources.paponga.com/thumbnail/neonimo.png",
     "url": [{
         "tipo": "web",
-        "link": "http://c28.cl/juegos/7c00b046-bb1e-419e-be37-d6cd60d3bb94"
+        "link": "https://resources.paponga.com/juegos/7c00b046-bb1e-419e-be37-d6cd60d3bb94/index.html"
     }],
     "tags": [
         "web",
@@ -37,11 +37,11 @@
     "titulo": "Another Invaders",
     "descripcion_es": "Defiende al sistema solar de la invasion alienigena, derrotalos a todos y usa sus armas en su contra!",
     "descripcion_en": "Defend the solar system from the alien invasion, kill 'em all and use theirs weapons against them!",
-    "thumbnail": "https://resources.clan28.cl/thumbnail/another-invaders.png",
+    "thumbnail": "https://resources.paponga.com/thumbnail/another-invaders.png",
     "url": [
         {
             "tipo": "web",
-            "link": "http://c28.cl/juegos/698cc02a-424a-4b68-8948-f756c4dc9eab"
+            "link": "https://resources.paponga.com/juegos/698cc02a-424a-4b68-8948-f756c4dc9eab/index.html"
         }
     ],
     "tags": [
@@ -57,10 +57,10 @@
     "titulo": "Saltarina",
     "descripcion_es": "Salta con saltarina para recolectar los tesoros que te estan esperando! cuidado con los obstaculos",
     "descripcion_en": "Jump with saltarina to collect the treasures that are waiting for you! Beware of obstacles",
-    "thumbnail": "https://resources.clan28.cl/thumbnail/saltarina.png",
+    "thumbnail": "https://resources.paponga.com/thumbnail/saltarina.png",
     "url": [{
         "tipo": "web",
-        "link": "http://c28.cl/juegos/55c17199-cf7c-402c-8342-16531d02354f"
+        "link": "https://resources.paponga.com/juegos/55c17199-cf7c-402c-8342-16531d02354f/index.html"
     }],
     "tags": [
         "web"
@@ -72,10 +72,10 @@
     "titulo": "Balun",
     "descripcion_es": "Sube y sube y sube y sube, hasta donde llegara?, cuantas monedas puedes recolectar?, cuidado con inflarte mucho",
     "descripcion_en": "Up and up and up and up, how far will it go?, how many coins can you collect?, beware of inflating yourself a lot",
-    "thumbnail": "https://resources.clan28.cl/thumbnail/balun.png",
+    "thumbnail": "https://resources.paponga.com/thumbnail/balun.png",
     "url": [{
         "tipo": "web",
-        "link": "http://c28.cl/juegos/ec228767-d8d0-4a8a-8145-cf074e3e2cf5"
+        "link": "https://resources.paponga.com/juegos/ec228767-d8d0-4a8a-8145-cf074e3e2cf5/index.html"
     }],
     "tags": [
         "web"
@@ -87,7 +87,7 @@
     "titulo": "Avioneta",
     "descripcion_es": "Sobrevive el mayor tiempo que puedas y talvez llegas al final",
     "descripcion_en": "Survive as long as you can and maybe get to the end",
-    "thumbnail": "https://resources.clan28.cl/thumbnail/avioneta.png",
+    "thumbnail": "https://resources.paponga.com/thumbnail/avioneta.png",
     "url": [{
         "tipo": "android",
         "link": "https://play.google.com/store/apps/details?id=cl.c28.godot.avioneta"
@@ -106,7 +106,7 @@
     "titulo": "Basket and Ball",
     "descripcion_es": "Basket and Ball!, lleva los balones hacia las canastas con la ayuda del teclado o tocandolas. Resuelve diferentes tipos de acertijos en la cancha de baloncesto y gana bonificaciones. Estos bonos te ayudarán a salir de las dificultades. Este juego es una colaboracion con gameskeys.net",
     "descripcion_en": "In the Basket and Ball game, the players have to control the balls with the help of a keyboard or touch and force them into the baskets. Solve different kinds of puzzles on the basketball court and earn bonuses. These bonuses will help you to get out of the difficulties.",
-    "thumbnail": "https://resources.clan28.cl/thumbnail/basketandball.webp",
+    "thumbnail": "https://resources.paponga.com/thumbnail/basketandball.webp",
     "url": [{
         "tipo": "ios",
         "link": "https://gameskeys.net/product/basket-and-ball"
@@ -123,7 +123,7 @@
     "titulo": "Super Mando",
     "descripcion_es": "Disponible en Steam!. Ayuda a mando para encontrar la promo de hamburguesas con papas fritas y asi poder cenar con su novia. Salta, aplasta y supera los 32 niveles de esta aventura en plataformas",
     "descripcion_en": "Available on Steam!. Help mando to find hamburgers with fries and so you can have dinner with your girlfriend. Jump, crush and overcome 32 levels of this platform adventure",
-    "thumbnail": "https://resources.clan28.cl/thumbnail/supermando.webp",
+    "thumbnail": "https://resources.paponga.com/thumbnail/supermando.webp",
     "url": [{
         "tipo": "steam",
         "link": "https://store.steampowered.com/app/2145320/Super_Mando/"
@@ -141,7 +141,7 @@
     "titulo": "Super Mando Mobile",
     "descripcion_es": "Esta version mobile de super mando presenta un runner 2d con 16 niveles para jugar, presiona la pantalla para saltar y aplasta los obstaculos",
     "descripcion_en": "A mobile version of super mando features a 2d runner with 16 levels to play, touch the screen to jump and crush obstacles",
-    "thumbnail": "https://resources.clan28.cl/thumbnail/supermando_mobile.webp",
+    "thumbnail": "https://resources.paponga.com/thumbnail/supermando_mobile.webp",
     "url": [
         {
             "tipo": "android",
