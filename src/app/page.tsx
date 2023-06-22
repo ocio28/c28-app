@@ -1,16 +1,18 @@
 "use client"
 import React, { useEffect, useState } from 'react'
-import { AppleIcon, LinuxIcon, PapongaIcon, PlatformIcon, WindowsIcon } from './components/Icons'
+import { PapongaIcon, PlatformIcon } from './components/Icons'
 import Button, { LangButton } from './components/Buttons'
 import GameCard from './components/Card'
 import { Game, fetch_games } from '@/lib/Api'
 import { useTranslation } from 'react-i18next'
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from 'swiper'
+import { openGameUrl } from '@/utils'
 
 import '../lib/i18n';
 import "swiper/css";
 import "swiper/css/navigation";
-import { Navigation } from 'swiper'
+import moment from 'moment'
 
 
 const DEFAULT_LANGUAGE = "es"
@@ -51,9 +53,6 @@ const Breakpoints = {
 
 function Splash({ games }: { games: Game[]} ) {
   const { t } = useTranslation()
-  const handleClick = (url: string) => {
-    window.open(url, "_blank")?.focus()
-  }
 
   return (
     <div className='bg-black pb-4'>
@@ -80,7 +79,7 @@ function Splash({ games }: { games: Game[]} ) {
                           <a key={value.link} className="mr-4" href={value.link}><PlatformIcon tipo={value.tipo} /></a>
                         )}
                       </div>
-                      <Button onClick={() => handleClick(game.url[0].link)}>{t("jugar")}</Button>
+                      <Button onClick={() => openGameUrl(game.url)}>{t("jugar")}</Button>
                     </div>
                   </div>
                 </div>
@@ -99,12 +98,14 @@ function Splash({ games }: { games: Game[]} ) {
   )
 }
 
+
+
 function Footer() {
   return (
     <div className='bg-black py-8 text-center'>
       <div className='p-4 flex items-center justify-center'>
         <PapongaIcon />
-        <span className='ml-4'>paponga games - 2023 v0.3.0</span></div>
+        <span className='ml-4'>paponga games - {moment().format('YYYY')} v0.3.0</span></div>
       <div>develop@paponga.com</div>
       <div>@juegospaponga</div>
       <div className='p-4 flex justify-center'>

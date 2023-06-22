@@ -22,3 +22,12 @@ const isMobile = {
 export function isIos() {
   return isMobile.iOS()
 }
+
+export function openGameUrl(urls: any) {
+  const hasIos = urls.find((v: any) => v.tipo === 'ios')
+  if (hasIos && isIos()) {
+    window.open(hasIos.link, "_blank")?.focus()
+  } else {
+    window.open(urls[0].link, "_blank")?.focus()
+  }
+}
