@@ -27,8 +27,8 @@ export default function Home() {
   return (
     <main>
       <Splash games={games} />
-      <div className='text-black text-center text-5xl py-12 font-bold'>PAPONGA</div>
-      <div className='bg-black p-8 flex justify-center text-center'>
+      <div className='text-black text-center text-5xl py-20 font-bold'>PAPONGA</div>
+      <div className='bg-black p-8 py-20 flex justify-center text-center'>
         <p className='w-96'>
           {t("parrafo")}
         </p>
@@ -45,7 +45,7 @@ const Breakpoints = {
   // when window width is >= 640px
   640: {
     slidesPerView: 2,
-    spaceBetween: 64
+    spaceBetween: 50
     }
 }
 
@@ -70,8 +70,8 @@ function Splash({ games }: { games: Game[]} ) {
           {games.filter(filterGames).map((game) => (
             <SwiperSlide key={game.uuid}>
               <div className='max-w-4xl'>
-                <div className='relative' style={{ maxWidth: 700}}>
-                  <img src={game.thumbnail} alt="imagen" className='opacity-50 object-cover' style={{ width: 'auto', height: 500 }} />
+                <div className='relative'>
+                  <img src={game.thumbnail} alt="imagen" className='opacity-50 object-cover' style={{ width: '100%', height: 500 }} />
                   <div className='absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-between'>
                     <div className='text-center text-2xl py-8 font-bold'>{game.titulo}</div>
                     <div className='flex justify-between items-center p-8'>
@@ -84,7 +84,7 @@ function Splash({ games }: { games: Game[]} ) {
                     </div>
                   </div>
                 </div>
-                <div className='p-4'>
+                <div className='p-4 py-8'>
                   <p>
                     {game.descripcion}
                   </p>
