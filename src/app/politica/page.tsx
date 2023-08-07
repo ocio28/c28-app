@@ -11,7 +11,7 @@ export default function Politica() {
 
   return (
     <main className="text-black">
-      <div className="p-6">
+      <div className="container mx-auto p-6 max-w-screen-md">
         {i18n.resolvedLanguage === 'es' ? <Spanish /> : <English />}
       </div>
       <Footer />
