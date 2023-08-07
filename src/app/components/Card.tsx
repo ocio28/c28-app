@@ -39,14 +39,14 @@ export default function GameCard({ game }: GameCardProps) {
           </p>
         </div>
       </div>
-      {game.externo && <small>*{t("colaboracion")}</small>}
       <div>
         <strong>Publicado: {moment(game.fecha_publicacion).format("DD/MM/YYYY")}</strong>
         <div className="flex my-4">
           {game.url.map((value) =>
             <a key={value.link} className="mr-4" href={value.link}><PlatformIcon tipo={value.tipo} /></a>
-          )}
+            )}
         </div>
+            {game.externo && <strong><small>*{t("colaboracion")}</small></strong>}
         <Button className="w-full" onClick={handlePlay}>{t("jugar")}</Button>
       </div>
     </Card>
