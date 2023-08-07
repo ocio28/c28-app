@@ -7,8 +7,6 @@ import '../../lib/i18n';
 export default function Politica() {
   const { i18n } = useTranslation()
 
-  console.log('lang', i18n.resolvedLanguage)
-
   return (
     <main className="text-black">
       <div className="container mx-auto p-6 max-w-screen-md">

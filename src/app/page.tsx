@@ -14,6 +14,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import moment from 'moment'
 import Footer from './components/Footer'
+import Loading from './components/Loading'
 
 
 const DEFAULT_LANGUAGE = "es"
@@ -21,11 +22,18 @@ const DEFAULT_LANGUAGE = "es"
 
 export default function Home() {
   const { t, i18n } = useTranslation()
+  const [busy, setBusy] = useState(true)
   const [games, setGames] = useState<Game[]>([])
-  console.log(i18n.resolvedLanguage)
+
+  const toggleLoading = () => setBusy(!busy)
+
   useEffect(() => {
-    fetch_games(i18n.resolvedLanguage || DEFAULT_LANGUAGE).then((games) => setGames(games))
+    fetch_games(i18n.resolvedLanguage || DEFAULT_LANGUAGE).then((games) => setGames(games)).finally(toggleLoading)
   }, [])
+
+  if (busy) {
+    return <div className='w-full h-screen flex justify-center items-center'><Loading /></div>
+  }
   
   return (
     <main>
