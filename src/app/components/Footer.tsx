@@ -14,9 +14,9 @@ export default function Footer() {
         <LangButton lang="es" className='mr-4'>Español</LangButton>
         <LangButton lang='en'>English</LangButton>
       </div>
-      <div className="flex justify-center items-center py-2"><InstagramIcon /> @juegospaponga</div>
-      <div>develop@paponga.com</div>
-      <div className="my-2 italic">
+      <div className="underline"><a href="mailto:develop@paponga.com">develop@paponga.com</a></div>
+      <div className="py-2"><a className="flex justify-center items-center" href="https://www.instagram.com/juegospaponga"><InstagramIcon /> @juegospaponga</a></div>
+      <div className="my-2 italic underline">
         <a href="/politica">Revisa nuestra política de privacidad aqui</a>
       </div>
     </div>
