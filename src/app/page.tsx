@@ -13,6 +13,7 @@ import '../lib/i18n';
 import "swiper/css";
 import "swiper/css/navigation";
 import moment from 'moment'
+import Footer from './components/Footer'
 
 
 const DEFAULT_LANGUAGE = "es"
@@ -21,7 +22,7 @@ const DEFAULT_LANGUAGE = "es"
 export default function Home() {
   const { t, i18n } = useTranslation()
   const [games, setGames] = useState<Game[]>([])
-
+  console.log(i18n.resolvedLanguage)
   useEffect(() => {
     fetch_games(i18n.resolvedLanguage || DEFAULT_LANGUAGE).then((games) => setGames(games))
   }, [])
@@ -93,24 +94,6 @@ function Splash({ games }: { games: Game[]} ) {
           ))
           }
         </Swiper>
-      </div>
-    </div>
-  )
-}
-
-
-
-function Footer() {
-  return (
-    <div className='bg-black py-8 text-center'>
-      <div className='p-4 flex items-center justify-center'>
-        <PapongaIcon />
-        <span className='ml-4'>paponga games - {moment().format('YYYY')} v0.3.0</span></div>
-      <div>develop@paponga.com</div>
-      <div>@juegospaponga</div>
-      <div className='p-4 flex justify-center'>
-        <LangButton lang="es" className='mr-4'>Español</LangButton>
-        <LangButton lang='en'>English</LangButton>
       </div>
     </div>
   )

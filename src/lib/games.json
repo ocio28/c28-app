@@ -135,7 +135,7 @@
     ]
 },
 {
-    "uuid": "b526e0c7-fabd-458b-a5bb-5de48057baf3",
+    "uuid": "890291aa-1bb1-4a0e-bdb1-18227b034483",
     "index": 8,
     "fecha_publicacion": "2022-12-08T11:00:00.0Z",
     "titulo": "Super Mando Mobile",
@@ -155,5 +155,23 @@
     "tags": [
         "android",
         "ios"
+    ]
+},
+{
+    "uuid": "86f42468-26bf-4db2-a587-4897199f7395",
+    "index": 8,
+    "fecha_publicacion": "2023-07-27T11:00:00.0Z",
+    "titulo": "F7 Attack!",
+    "descripcion_es": "¡Sumérgete en un universo lleno de peligros y adrenalina, donde tomarás el control de la nave espacial más avanzada de la galaxia! Eres el valiente protagonista, el último bastión de la esperanza para la humanidad en su lucha contra los invasores.",
+    "descripcion_en": "Immerse yourself in a universe full of danger and adrenaline, where you will take control of the most advanced spaceship in the galaxy! You are the brave protagonist, the last bastion of hope for humanity in its fight against the invaders.",
+    "thumbnail": "https://resources.paponga.com/thumbnail/f7attack.webp",
+    "url": [
+        {
+            "tipo": "android",
+            "link": "https://play.google.com/store/apps/details?id=cl.paponga.games.f7"
+        }
+    ],
+    "tags": [
+        "android"
     ]
 }]

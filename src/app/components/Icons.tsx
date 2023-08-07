@@ -1,4 +1,4 @@
-import { FaWindows, FaApple, FaLinux, FaAppStoreIos, FaSteam } from 'react-icons/fa'
+import { FaWindows, FaApple, FaLinux, FaAppStoreIos, FaSteam, FaInstagram } from 'react-icons/fa'
 import { IoMdAppstore } from 'react-icons/io'
 
 
@@ -39,4 +39,8 @@ export function PlatformIcon({ tipo } : { tipo: string }) {
     case "steam": return <SteamIcon />
     default: return <strong>WEB</strong>
   }
+}
+
+export function InstagramIcon() {
+  return <FaInstagram size={DEFAULT} />
 }
