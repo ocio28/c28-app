@@ -32,7 +32,6 @@ function App() {
 
   const handleSlideChange = () => {
     setHelp(false)
-    console.log('asdf')
   }
 
   return (
