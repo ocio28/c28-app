@@ -1,32 +1,37 @@
 {
-  "name": "paponga-app",
-  "version": "0.1.0",
+  "name": "paponga-app-v2",
   "private": true,
+  "version": "0.0.1",
+  "type": "module",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@types/node": "20.3.1",
-    "@types/react": "18.2.12",
-    "@types/react-dom": "18.2.5",
-    "eslint": "8.42.0",
-    "eslint-config-next": "13.4.5",
-    "i18next-browser-languagedetector": "^7.0.2",
-    "moment": "^2.29.4",
-    "next": "13.4.5",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-i18next": "^13.0.0",
-    "react-icons": "^4.9.0",
-    "swiper": "^9.4.1",
-    "typescript": "5.1.3"
+    "i18next": "^23.7.17",
+    "i18next-browser-languagedetector": "^7.2.0",
+    "moment": "^2.30.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-i18next": "^14.0.1",
+    "react-icons": "^5.0.1",
+    "swiper": "^11.0.5"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.14",
-    "postcss": "^8.4.24",
-    "tailwindcss": "^3.3.2"
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.17",
+    "eslint": "^8.55.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "postcss": "^8.4.33",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8"
   }
 }

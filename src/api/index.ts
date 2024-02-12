@@ -36,19 +36,21 @@ export interface Game {
   descripcion_en: string;
   descripcion?: string;
   thumbnail: string;
+  short?: string;
   url: {
     tipo: string;
     link: string;
   }[];
   tags: string[];
   externo?: boolean;
+  disable?: boolean;
 }
 
-export async function fetch_games(lang : string): Promise<Game[]> {
+export async function fetch_games(lang: string): Promise<Game[]> {
   return Games.map((g) => resolveLang(g, lang)).sort(sortGames)
 }
 
-function resolveLang(game : Game, lang : string): Game {
+function resolveLang(game: Game, lang: string): Game {
   return {
     ...game,
     descripcion: lang === 'es' ? game.descripcion_es : game.descripcion_en

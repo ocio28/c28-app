@@ -12,7 +12,8 @@
     }],
     "tags": [
         "android"
-    ]
+    ],
+    "short": "https://resources.paponga.com/shorts/popoki-short.mp4"
 }, {
     "uuid": "7c00b046-bb1e-419e-be37-d6cd60d3bb94",
     "index": 1,
@@ -29,7 +30,8 @@
         "web",
         "gamepad",
         "keyboard"
-    ]
+    ],
+    "disable": true
 }, {
     "uuid": "698cc02a-424a-4b68-8948-f756c4dc9eab",
     "index": 2,
@@ -49,7 +51,8 @@
         "gamepad",
         "keyboard",
         "web"
-    ]
+    ],
+    "disable": true
 }, {
     "uuid": "55c17199-cf7c-402c-8342-16531d02354f",
     "index": 4,
@@ -64,7 +67,8 @@
     }],
     "tags": [
         "web"
-    ]
+    ],
+    "disable": true
 }, {
     "uuid": "ec228767-d8d0-4a8a-8145-cf074e3e2cf5",
     "index": 5,
@@ -79,7 +83,8 @@
     }],
     "tags": [
         "web"
-    ]
+    ],
+    "disable": true
 }, {
     "uuid": "4c6da26c-da09-4854-adc1-72f884e2c1ad",
     "index": 6,
@@ -97,7 +102,8 @@
     }],
     "tags": [
         "android"
-    ]
+    ],
+    "short": "https://resources.paponga.com/shorts/avioneta-short.mp4"
 },
 {
     "uuid": "externo-01",
@@ -114,14 +120,15 @@
     "tags": [
         "ios"
     ],
-    "externo": true
+    "externo": true,
+    "disable": true
 },
 {
     "uuid": "b526e0c7-fabd-458b-a5bb-5de48057baf3",
     "index": 7,
     "fecha_publicacion": "2023-01-27T11:00:00.0Z",
     "titulo": "Super Mando",
-    "descripcion_es": "Disponible en Steam!. Ayuda a mando para encontrar la promo de hamburguesas con papas fritas y asi poder cenar con su novia. Salta, aplasta y supera los 32 niveles de esta aventura en plataformas",
+    "descripcion_es": "Disponible en Steam!. Ayuda a mando para encontrar la promo de hamburguesas con papas fritas y asi poder cenar con su novia. Salta, aplasta y supera los 32 niveles de esta aventura de plataformas",
     "descripcion_en": "Available on Steam!. Help mando to find hamburgers with fries and so you can have dinner with your girlfriend. Jump, crush and overcome 32 levels of this platform adventure",
     "thumbnail": "https://resources.paponga.com/thumbnail/supermando.webp",
     "url": [{
@@ -132,7 +139,8 @@
         "windows",
         "macos",
         "linux"
-    ]
+    ],
+    "short": "https://resources.paponga.com/shorts/super-mando-short.mp4"
 },
 {
     "uuid": "890291aa-1bb1-4a0e-bdb1-18227b034483",
@@ -155,11 +163,12 @@
     "tags": [
         "android",
         "ios"
-    ]
+    ],
+    "short": "https://resources.paponga.com/shorts/super-mando-mobile-short.mp4"
 },
 {
     "uuid": "86f42468-26bf-4db2-a587-4897199f7395",
-    "index": 8,
+    "index": 9,
     "fecha_publicacion": "2023-07-27T11:00:00.0Z",
     "titulo": "F7 Attack!",
     "descripcion_es": "¡Sumérgete en un universo lleno de peligros y adrenalina, donde tomarás el control de la nave espacial más avanzada de la galaxia! Eres el valiente protagonista, el último bastión de la esperanza para la humanidad en su lucha contra los invasores.",
@@ -173,5 +182,25 @@
     ],
     "tags": [
         "android"
+    ],
+    "short": "https://resources.paponga.com/shorts/f7-short.mp4"
+},
+{
+    "uuid": "9f38ab2c-ea27-432d-bb4f-2c9421b89e62",
+    "index": 10,
+    "fecha_publicacion": "2023-01-16T00:00:00.0Z",
+    "titulo": "Papongas",
+    "descripcion_es": "Come todas las papongas que puedas, esquiva los pinchos porque duelen",
+    "descripcion_en": "Eat as many papongas as you can, avoid the spikes because they hurt.",
+    "thumbnail": "https://resources.paponga.com/thumbnail/papongas.webp",
+    "short": "https://resources.paponga.com/shorts/paponga-short.mp4",
+    "url": [
+        {
+            "tipo": "web",
+            "link": "https://resources.paponga.com/juegos/papongas/index.html"
+        }
+    ],
+    "tags": [
+        "web"
     ]
 }]

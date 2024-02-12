@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: black;
+}
+
+.bg {
+  background-color: #c87137;
+}
+
+.help-hand {
+  position: absolute;
+  top: 40%;
+  right: 20%;
+  z-index: 1000;
+  animation: moverArriba 1s ease forwards alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes moverArriba {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(200px);
+  }
+}

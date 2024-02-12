@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="61.412842mm"
+   height="61.412842mm"
+   viewBox="0 0 61.412842 61.412842"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="splash.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="293.92857"
+     inkscape:cy="324.28571"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-672.70467,-129.64192)">
+    <circle
+       style="fill:#ffccaa;fill-opacity:1;stroke-width:0.247231;stroke-linecap:square;paint-order:stroke fill markers"
+       id="circle2247"
+       cx="703.41107"
+       cy="160.34834"
+       r="30.706427"
+       inkscape:export-filename="../../../../workspace/paponga/paponga-app-v2/public/logo.svg"
+       inkscape:export-xdpi="225.51862"
+       inkscape:export-ydpi="225.51862" />
+    <g
+       aria-label="P"
+       id="g2251"
+       style="font-size:37.6138px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';fill:#c87137;fill-opacity:1;stroke-width:0.39181"
+       transform="matrix(1.365193,0,0,1.365193,540.90464,44.787325)">
+      <path
+         d="m 116.29363,75.879265 v 10.30339 h 4.665 c 1.72641,0 6.00632,-0.446909 6.94911,-1.340726 0.94279,-0.893818 -5.82697,-2.21613 -5.82697,-3.86908 0,-1.640706 6.76976,-2.85904 5.82697,-3.752857 -0.94279,-0.893818 -5.2227,-1.340727 -6.94911,-1.340727 z m -8.07788,-2.96544 12.74288,-0.08334 c 3.07319,-0.0201 8.33881,0.697912 9.90605,2.093737 1.57949,1.383581 2.36923,3.416097 2.36923,6.09755 0,2.705941 -0.78974,4.750701 -2.36923,6.134282 -1.56724,1.383581 -6.83279,2.075371 -9.90605,2.075371 h -4.665 l -1.35102,7.151396 -8.07788,0.08334 z"
+         id="path2249"
+         sodipodi:nodetypes="ccsssssccscscscccc"
+         style="fill:#c87137;fill-opacity:1" />
+    </g>
+  </g>
+</svg>
