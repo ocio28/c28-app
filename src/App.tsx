@@ -36,7 +36,7 @@ function App() {
 
   return (
     <div className='relative md:container md:mx-auto md:max-w-md font-mono bg-black h-screen flex'>
-      <GameSwiper games={games.filter(paponga_filter).sort(sort_latest).sort(sort_web)} onSlideChange={handleSlideChange}/>
+      <GameSwiper games={games.filter(paponga_filter).sort(sort_latest)} onSlideChange={handleSlideChange}/>
       {help && <div className='help-hand'>
         <FaHandPointer color='white' size={48} />
       </div>}
@@ -68,7 +68,7 @@ function sort_web(a: Game, b: Game): number {
 }
 
 function sort_latest(a: Game, b: Game): number {
-  return moment(a.fecha_publicacion).isBefore(b.fecha_publicacion) ? -1 : 1
+  return a.index > b.index ? -1 : 1
 }
 
 export default App
