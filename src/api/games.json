@@ -203,4 +203,23 @@
     "tags": [
         "web"
     ]
+},
+{
+    "uuid": "d9b2c996-a059-4558-a380-fef270c627ae",
+    "index": 11,
+    "fecha_publicacion": "2024-02-13T00:00:00.0Z",
+    "titulo": "Ladrillos",
+    "descripcion_es": "Destrulle los ladrillos sin que caiga la pelota la suelo",
+    "descripcion_en": "Break down the bricks without the ball falling on the ground.",
+    "thumbnail": "https://resources.paponga.com/thumbnail/ladrillos.png",
+    "short": "https://resources.paponga.com/shorts/ladrillos-short.mp4",
+    "url": [
+        {
+            "tipo": "web",
+            "link": "https://resources.paponga.com/juegos/ladrillos/index.html"
+        }
+    ],
+    "tags": [
+        "web"
+    ]
 }]

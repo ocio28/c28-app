@@ -17,12 +17,18 @@ interface GameSlide {
   toggleMuted: MouseEventHandler<HTMLVideoElement>
 }
 
-export function GameSwiper({ games, onSlideChange }: { games: Array<Game>, onSlideChange: Function }) {
-  const [muted, setMuted] = useState(true)
+interface GameSwiper {
+  games: Array<Game>,
+  onFirstMove: any,
+  initialSlide: number
+}
 
+export function GameSwiper({ games, onFirstMove, initialSlide = 0 }: GameSwiper) {
+  const [muted, setMuted] = useState(true)
   const toggleMuted = () => setMuted(!muted)
+
   return (
-    <Swiper className="w-full h-dvh" direction="vertical" slidesPerView={1} loop onSlideChangeTransitionStart={() => onSlideChange()}>
+    <Swiper className="w-full h-dvh" direction="vertical" slidesPerView={1} loop initialSlide={initialSlide} onSliderFirstMove={onFirstMove}>
       {games.map(game => (
         <SwiperSlide key={game.uuid}>
           <GameSlide
