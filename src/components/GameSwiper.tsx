@@ -28,6 +28,7 @@ interface GameSwiper {
 }
 
 export function GameSwiper({ games, onFirstMove, initialSlide = 0 }: GameSwiper) {
+  const swiperRef = useRef(null)
   const [muted, setMuted] = useState(true)
   const [modal, setModal] = useState(false)
   const [currentSlide, setCurrentSlide] = useState(initialSlide)
@@ -37,15 +38,19 @@ export function GameSwiper({ games, onFirstMove, initialSlide = 0 }: GameSwiper)
   const toggleModal = () => setModal(!modal)
 
   const handleSlideChange = (v: any) => {
-    setCurrentSlide(v.activeIndex)
+    setCurrentSlide(v.realIndex)
     if (games.length > 0) {
-      setCurrentGame(games[v.activeIndex].titulo)
+      setCurrentGame(games[v.realIndex].titulo)
     }
   }
 
+  useEffect(() => {
+
+  }, [])
+
   return (
     <>
-      <Swiper className="w-full h-dvh" direction="vertical" slidesPerView={1} loop initialSlide={initialSlide} onSliderFirstMove={onFirstMove} onSlideChange={handleSlideChange}>
+      <Swiper ref={swiperRef} className="w-full h-dvh" direction="vertical" slidesPerView={1} loop initialSlide={initialSlide} onSliderFirstMove={onFirstMove} onSlideChange={handleSlideChange}>
         {games.map(game => (
           <SwiperSlide key={game.uuid}>
             <GameSlide

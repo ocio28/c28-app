@@ -31,7 +31,7 @@ interface Share {
 
 export function ShareModal({ visible, onClose, slide, game }: Share) {
   const url = `https://paponga.com/?slide=${slide}`
-  const title = `Juega ${game} en`
+  const title = `Juega "${game}"`
 
   return (
     <Modal isOpen={visible} onRequestClose={onClose} style={customStyles}  className="md:container md:mx-auto md:max-w-md modal-content-bottom" contentLabel="Compartir">
