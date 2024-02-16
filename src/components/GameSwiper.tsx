@@ -1,13 +1,14 @@
 import { MouseEventHandler, useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide, useSwiperSlide } from "swiper/react";
-import { IoToggleSharp, IoVolumeHigh, IoVolumeMute } from "react-icons/io5";
 import { useTranslation } from "react-i18next";
+import { IoVolumeHigh, IoVolumeMute } from "react-icons/io5";
+import { FaShare } from "react-icons/fa6";
+import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
 
 import { Game } from "../api";
 import 'swiper/css';
 import { ShareModal } from "./ShareModal";
-import { FaShare } from "react-icons/fa6";
 
 
 interface GameSlide {
@@ -28,7 +29,6 @@ interface GameSwiper {
 }
 
 export function GameSwiper({ games, onFirstMove, initialSlide = 0 }: GameSwiper) {
-  const swiperRef = useRef(null)
   const [muted, setMuted] = useState(true)
   const [modal, setModal] = useState(false)
   const [currentSlide, setCurrentSlide] = useState(initialSlide)
@@ -44,13 +44,9 @@ export function GameSwiper({ games, onFirstMove, initialSlide = 0 }: GameSwiper)
     }
   }
 
-  useEffect(() => {
-
-  }, [])
-
   return (
     <>
-      <Swiper ref={swiperRef} className="w-full h-dvh" direction="vertical" slidesPerView={1} loop initialSlide={initialSlide} onSliderFirstMove={onFirstMove} onSlideChange={handleSlideChange}>
+      <Swiper className="w-full h-dvh" direction="vertical" slidesPerView={1} loop initialSlide={initialSlide} onSliderFirstMove={onFirstMove} onSlideChange={handleSlideChange}>
         {games.map(game => (
           <SwiperSlide key={game.uuid}>
             <GameSlide
@@ -71,10 +67,15 @@ export function GameSwiper({ games, onFirstMove, initialSlide = 0 }: GameSwiper)
 }
 
 function GameSlide({ titulo, thumbnail, url, descripcion, short, muted, toggleMuted, toggleShare }: GameSlide) {
+  const [loaded, setLoaded] = useState(false)
   const { t } = useTranslation()
   const swiperSlide = useSwiperSlide()
   const ref = useRef<HTMLVideoElement>(null)
   const handlePlay = () => redirect(url)
+
+  const handleVideoLoaded = () => {
+    setLoaded(true)
+  }
 
   useEffect(() => {
     if (ref.current !== null) {
@@ -89,7 +90,13 @@ function GameSlide({ titulo, thumbnail, url, descripcion, short, muted, toggleMu
   return (
     <div className="w-full h-full text-white">
       {!short && <img src={thumbnail} alt="imagen" className="w-full h-full object-cover opacity-50" />}
-      {short && <video ref={ref} src={short} autoPlay muted={muted} loop preload="auto" className="w-full h-full object-cover opacity-50" onClick={toggleMuted} />}
+      {short && <div>
+        <video ref={ref} src={short} autoPlay muted={muted} loop preload="auto" className="w-full h-full object-cover opacity-50" onClick={toggleMuted} onLoadedData={handleVideoLoaded} />
+        {!loaded && <div className="absolute top-[50%] left-[50%] z-10">
+          <AiOutlineLoading3Quarters size={32} color="white" className="spinner" />
+        </div>}
+      </div>
+      }
       <div className="absolute top-0 left-0 right-0">
         <div className="text-3xl text-center mt-10 font-bold uppercase">{titulo}</div>
       </div>
