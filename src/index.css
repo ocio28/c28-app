@@ -27,3 +27,16 @@ body {
     transform: translateY(200px);
   }
 }
+
+.modal-content-bottom {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: #fff;
+  overflow: hidden;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  outline: none;
+  padding: 48px;
+}

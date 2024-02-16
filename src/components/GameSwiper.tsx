@@ -30,13 +30,18 @@ interface GameSwiper {
 export function GameSwiper({ games, onFirstMove, initialSlide = 0 }: GameSwiper) {
   const [muted, setMuted] = useState(true)
   const [modal, setModal] = useState(false)
+  const [currentSlide, setCurrentSlide] = useState(initialSlide)
   
   const toggleMuted = () => setMuted(!muted)
   const toggleModal = () => setModal(!modal)
 
+  const handleSlideChange = (v: any) => {
+    setCurrentSlide(v.activeIndex)
+  }
+
   return (
     <>
-      <Swiper className="w-full h-dvh" direction="vertical" slidesPerView={1} loop initialSlide={initialSlide} onSliderFirstMove={onFirstMove}>
+      <Swiper className="w-full h-dvh" direction="vertical" slidesPerView={1} loop initialSlide={initialSlide} onSliderFirstMove={onFirstMove} onSlideChange={handleSlideChange}>
         {games.map(game => (
           <SwiperSlide key={game.uuid}>
             <GameSlide
@@ -51,7 +56,7 @@ export function GameSwiper({ games, onFirstMove, initialSlide = 0 }: GameSwiper)
           </SwiperSlide>
         ))}
       </Swiper>
-      <ShareModal visible={modal} onClose={toggleModal} />
+      <ShareModal visible={modal} onClose={toggleModal} slide={currentSlide} />
     </>
   )
 }
@@ -82,9 +87,9 @@ function GameSlide({ titulo, thumbnail, url, descripcion, short, muted, toggleMu
       <div className="absolute left-0 right-0 bottom-0 flex flex-col justify-between">
         <div className="relative flex flex-col m-6">
           {short && <div className="absolute bottom-[200px] right-0 flex flex-col">
-            {/*<button onClick={toggleShare} className="mb-3">
+            <button onClick={toggleShare} className="mb-3">
               <FaShare size={32} />
-  </button>*/}
+            </button>
             <MuteIcon muted={muted} onClick={toggleMuted} />
           </div>}
           <div className="font-bold text-sm mb-6 ml-4 text-justify">{descripcion}</div>
