@@ -37,10 +37,6 @@ function App() {
     fetch_games(i18n.resolvedLanguage || DEFAULT_LANGUAGE).then(setGames)
   }, [])
 
-  if (booting) {
-    return <Boot />
-  }
-
   const handleFirstMove = () => {
     if (help) {
       setHelp(false)
@@ -54,13 +50,14 @@ function App() {
     <div className='relative md:container md:mx-auto md:max-w-md font-mono bg-black h-screen flex'>
       <GameSwiper games={data} onFirstMove={handleFirstMove} initialSlide={initialSlide} />
       <Help visible={help} />
+      {booting && <Boot />}
     </div>
   )
 }
 
 function Boot() {
   return (
-    <div className='bg h-screen flex justify-center items-center'>
+    <div className='absolute top-0 left-0 right-0 bg h-screen flex justify-center items-center z-[1000]'>
       <img src={logo} alt="logo paponga" className='w-24 h-24' />
     </div>
   )
