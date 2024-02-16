@@ -25,25 +25,29 @@ const customStyles = {
 interface Share {
   visible: boolean,
   onClose: any,
-  slide: number
+  slide: number,
+  game: string
 }
 
-export function ShareModal({ visible, onClose, slide }: Share) {
+export function ShareModal({ visible, onClose, slide, game }: Share) {
   const url = `https://paponga.com/?slide=${slide}`
+  const title = `Juega ${game} en`
+
   return (
     <Modal isOpen={visible} onRequestClose={onClose} style={customStyles}  className="md:container md:mx-auto md:max-w-md modal-content-bottom" contentLabel="Compartir">
       <button className='absolute right-3 top-3' onClick={onClose}><IoCloseOutline size={32} /></button>
-      <div className='flex justify-around'>
-        <FacebookShareButton url={url}>
+      <h3 className='text-center mt-4 font-bold'>Compartir</h3>
+      <div className='flex justify-around mt-8'>
+        <FacebookShareButton url={url} hashtag='#paponga'>
           <FaFacebook size={32}/>
         </FacebookShareButton>
-        <TwitterShareButton title="juego" url={url}>
+        <TwitterShareButton title={title} url={url}>
           <FaTwitter size={32} />
         </TwitterShareButton>
-        <TelegramShareButton url={url}>
+        <TelegramShareButton url={url} title={title}>
           <FaTelegram size={32} />
         </TelegramShareButton>
-        <WhatsappShareButton url={url}>
+        <WhatsappShareButton url={url} title={title}>
           <FaWhatsapp size={32} />
         </WhatsappShareButton>
       </div>

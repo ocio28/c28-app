@@ -47,7 +47,7 @@ function App() {
   const data = games.filter(paponga_filter).sort(sort_latest)
 
   return (
-    <div className='relative md:container md:mx-auto md:max-w-md font-mono bg-black h-screen flex'>
+    <div className='relative md:container md:mx-auto md:max-w-md open-sans bg-black h-screen flex'>
       <GameSwiper games={data} onFirstMove={handleFirstMove} initialSlide={initialSlide} />
       <Help visible={help} />
       {booting && <Boot />}

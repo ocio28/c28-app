@@ -31,12 +31,16 @@ export function GameSwiper({ games, onFirstMove, initialSlide = 0 }: GameSwiper)
   const [muted, setMuted] = useState(true)
   const [modal, setModal] = useState(false)
   const [currentSlide, setCurrentSlide] = useState(initialSlide)
+  const [currentGame, setCurrentGame] = useState('')
   
   const toggleMuted = () => setMuted(!muted)
   const toggleModal = () => setModal(!modal)
 
   const handleSlideChange = (v: any) => {
     setCurrentSlide(v.activeIndex)
+    if (games.length > 0) {
+      setCurrentGame(games[v.activeIndex].titulo)
+    }
   }
 
   return (
@@ -56,7 +60,7 @@ export function GameSwiper({ games, onFirstMove, initialSlide = 0 }: GameSwiper)
           </SwiperSlide>
         ))}
       </Swiper>
-      <ShareModal visible={modal} onClose={toggleModal} slide={currentSlide} />
+      <ShareModal visible={modal} onClose={toggleModal} slide={currentSlide} game={currentGame} />
     </>
   )
 }
