@@ -90,7 +90,7 @@ function GameSlide({ titulo, thumbnail, url, descripcion, short, muted, toggleMu
   return (
     <div className="w-full h-full text-white">
       {!short && <img src={thumbnail} alt="imagen" className="w-full h-full object-cover opacity-50" />}
-      {short && <div>
+      {short && <div className="h-full">
         <video ref={ref} src={short} autoPlay muted={muted} loop preload="auto" playsInline className="w-full h-full object-cover opacity-50" onClick={toggleMuted} onLoadedData={handleVideoLoaded} />
         {!loaded && <div className="absolute top-[50%] left-[50%] z-10">
           <AiOutlineLoading3Quarters size={32} color="white" className="spinner" />
