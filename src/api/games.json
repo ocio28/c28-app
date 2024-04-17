@@ -228,11 +228,11 @@
 },
 {
     "uuid": "b6f45a3d-9cab-447f-9e34-203071fa7634",
-    "index": -1,
+    "index": 13,
     "fecha_publicacion": "2024-04-14T00:00:00.0Z",
     "titulo": "Invasores",
-    "descripcion_es": "Defiente al planeta de la invasion extraterrestre.",
-    "descripcion_en": "Defend the planet from the alien invasion.",
+    "descripcion_es": "Defiende a la humanidad de la invasión extraterrestre! Controla a nuestro mejor piloto y derrota a los alienígenas",
+    "descripcion_en": "Defend humanity from the alien invasion! Control our best pilot and defeat the aliens",
     "thumbnail": "https://resources.paponga.com/thumbnail/invasores.png",
     "short": "https://resources.paponga.com/shorts/invasores-short.mp4",
     "url": [
