@@ -244,4 +244,23 @@
     "tags": [
         "web"
     ]
+},
+{
+    "uuid": "c5438a2b-c703-449d-a6f5-f63249fee067",
+    "index": 14,
+    "fecha_publicacion": "2025-01-8T00:00:00.0Z",
+    "titulo": "Guns n' Guns",
+    "descripcion_es": "¡Júntate a la lucha por la libertad! Dispara, saltas y combate contra el opresor.",
+    "descripcion_en": "Join the fight for freedom! Shoot, jump, and fight against the oppressive army.",
+    "thumbnail": "https://resources.paponga.com/thumbnail/invasores.png",
+    "short": "https://resources.paponga.com/shorts/gunsnguns-short.mp4",
+    "url": [
+        {
+            "tipo": "android",
+            "link": "https://play.google.com/store/apps/details?id=cl.paponga.gunsnguns"
+        }
+    ],
+    "tags": [
+        "android"
+    ]
 }]

@@ -36,7 +36,7 @@ export function ShareModal({ visible, onClose, slide, game }: Share) {
   return (
     <Modal isOpen={visible} onRequestClose={onClose} style={customStyles}  className="md:container md:mx-auto md:max-w-md modal-content-bottom" contentLabel="Compartir">
       <button className='absolute right-3 top-3' onClick={onClose}><IoCloseOutline size={32} /></button>
-      <h3 className='text-center mt-4 font-bold'>Compartir</h3>
+      <h3 className='text-center mt-4 font-bold'>Hay que compartir!</h3>
       <div className='flex justify-around mt-8'>
         <FacebookShareButton url={url} hashtag='#paponga'>
           <FaFacebook size={32}/>
