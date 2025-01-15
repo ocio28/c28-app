@@ -109,7 +109,7 @@ function GameSlide({ titulo, thumbnail, url, descripcion, short, muted, toggleMu
             <MuteIcon muted={muted} onClick={toggleMuted} />
           </div>}
           <div className="font-bold text-sm mb-6 ml-4 text-justify">{descripcion}</div>
-          <button className="flex-1 bg mb-2 p-3 rounded-xl text-xl" onClick={handlePlay}>{t("jugar")}</button>
+          <button className="flex-1 bg-2 mb-2 p-3 rounded-xl text-xl font-bold" onClick={handlePlay}>{t("jugar")}</button>
         </div>
       </div>
     </div>

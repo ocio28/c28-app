@@ -10,14 +10,14 @@ const resources = {
     translation: {
       "parrafo": "Enjoy the best indie games with a lot of jumps, explosions and many challenges",
       "colaboracion": "This is a external collaboration",
-      "jugar": "Play"
+      "jugar": "PLAY"
     }
   },
   es: {
     translation: {
       "parrafo": "Disfruta de los mejores videojuegos caseros, amasados con saltos, una pisca de explosiones y muchos desafios",
       "colaboracion": "Esta es una collaboration externa",
-      "jugar": "Jugar"
+      "jugar": "JUGAR"
     }
   }
 };

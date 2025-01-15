@@ -15,7 +15,11 @@ body {
 }
 
 .bg {
-  background-color: #c87137;
+  background-color: #fca311;
+}
+
+.bg-2 {
+  background-color: #bc790c;
 }
 
 .help-hand {
