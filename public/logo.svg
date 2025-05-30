@@ -13,26 +13,22 @@
      id="defs311" />
   <g
      id="layer1">
+    <ellipse
+       style="fill:#fc8411;fill-opacity:1;stroke:#eeeeee;stroke-width:2.64356;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       id="path3098-3"
+       cx="16.933554"
+       cy="16.933027"
+       rx="15.608691"
+       ry="15.614505" />
     <g
-       id="g573"
-       transform="matrix(0.62434766,0,0,0.62458019,-28.841435,-33.092276)">
-      <circle
-         style="fill:#fca311;fill-opacity:1;stroke:#eeeeee;stroke-width:4.23333;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
-         id="path3098-3"
-         cx="73.316505"
-         cy="80.094284"
-         r="25" />
-      <text
-         xml:space="preserve"
-         style="font-size:25.7466px;line-height:1.25;font-family:'Press Start 2P';-inkscape-font-specification:'Press Start 2P, Normal';fill:#ffffff;stroke:#eeeeee;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         x="70.200508"
-         y="87.924019"
-         id="text3102-6"
-         transform="scale(0.91546814,1.0923373)"><tspan
-           id="tspan3100-7"
-           x="70.200508"
-           y="87.924019"
-           style="fill:#ffffff;stroke:#eeeeee;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">P</tspan></text>
+       aria-label="P"
+       transform="scale(0.91529771,1.0925407)"
+       id="text3102-6"
+       style="font-size:16.0778px;line-height:1.25;font-family:'Press Start 2P';-inkscape-font-specification:'Press Start 2P, Normal';fill:#eeeeee;stroke:#eeeeee;stroke-width:0.624464;fill-opacity:1">
+      <path
+         d="M 12.327243,15.57233 V 8.5382919 h 6.029175 6.029175 v 1.0048626 1.0048625 h 1.004863 1.004863 v 3.014588 3.014587 h -1.004863 -1.004863 v 1.004863 1.004862 h -4.01945 -4.01945 v 2.009725 2.009726 h -2.009725 -2.009725 z m 10.048625,-2.009725 v -3.014588 h -3.014587 -3.014588 v 3.014588 3.014587 h 3.014588 3.014587 z"
+         id="path290"
+         style="fill:#eeeeee;fill-opacity:1" />
     </g>
   </g>
 </svg>
